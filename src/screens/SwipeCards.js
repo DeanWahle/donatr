@@ -2,13 +2,15 @@
 'use strict';
  
 import React, { Component } from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, useWindowDimensions} from 'react-native';
+import RenderHtml from 'react-native-render-html';
 import ImageCard from '../Components/ImageCard';
 import SwipeCards from 'react-native-swipe-cards';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 
 const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
- 
+const source = {html: `<blockquote class="imgur-embed-pub" lang="en" data-id="a/Zf1o4Mq"  ><a href="//imgur.com/a/Zf1o4Mq">A. Bailey Legacy Foundation for Women</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>`}
+
 class MyCard extends React.Component {
   constructor(props) {
     super(props);
@@ -22,6 +24,9 @@ class MyCard extends React.Component {
                     <Title>{this.props.text}</Title>
                     <Paragraph>{this.props.bio}</Paragraph>
                 </Card.Content>
+                <RenderHtml
+                   source={source}
+                />
             <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
             <Card.Actions>
                 <Button>Cancel</Button>

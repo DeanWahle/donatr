@@ -1,6 +1,6 @@
 # donatr
 
-Placing 2nd overall at Wakehacks 2022, donatr is a mobile application developed with React Native, Expo, and the Imgur Api. The prompt for Wakehacks 2022 was "pro humanitate", which translates to "for humanity". Our application was developed to make donating to charity easier. Donatr has a swiping interface similar to the application "Tinder", but every card that appears is a local charity. 
+Placing 2nd overall at WakeHacks 2022, donatr is a mobile application developed with React Native, Expo, and the Imgur Api. The prompt for WakeHacks 2022 was "pro humanitate", which translates to "for humanity". Our application was developed to make donating to charity easier. Donatr has a swiping interface similar to the application "Tinder", but every card that appears is a local charity. 
 
 - Each swipe right will donate 50 cents to the charitable organization swiped on.
 
